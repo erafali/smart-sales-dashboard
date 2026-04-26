@@ -53,13 +53,21 @@ This project is built for:
 
 ## 🌐 Live Demo
 
-(Add your Netlify link here after deployment)
+https://smart-sales-dashboard-sai.netlify.app/
 
 ---
 
 ## 📸 Screenshot
 
-(Add screenshot later)
+![alt text]({A9544B25-775B-4233-AF8D-92EC42832C5D}.png)
+
+![alt text]({046121C8-8534-4D42-A0B8-8D8D7240376F}.png)
+
+![alt text]({C94AEC54-5BD9-4BB1-A791-03E11D419358}.png)
+
+![alt text]({C6D2CEF6-AA23-42B4-A8F3-9415FA332313}.png)
+![alt text]({11AD4B3E-7B29-49C7-A149-872DDC29A054}.png)
+
 
 ---
 
