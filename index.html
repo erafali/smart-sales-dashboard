@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Sales Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📊 Smart Sales Dashboard</h1>
+
+    <!-- FORM -->
+    <div class="card">
+        <h2>Add Sale Entry</h2>
+        <div class="form-row">
+            <input type="date" id="date" />
+            <input type="text" id="product" placeholder="Product Name" />
+            <input type="number" id="quantity" placeholder="Quantity" />
+            <input type="number" id="price" placeholder="Selling Price" />
+            <input type="number" id="cost" placeholder="Cost Price" />
+            <button onclick="addData()">Add</button>
+        </div>
+    </div>
+
+    <!-- CSV SECTION -->
+    <div class="card">
+        <h2>Upload CSV</h2>
+        <p class="hint">Format: Date, Product, Quantity, Price, Cost</p>
+        <input type="file" id="fileInput" />
+    </div>
+
+    <!-- CHARTS -->
+    <div class="grid">
+        <div class="card">
+            <h3>Sales Trend</h3>
+            <canvas id="salesChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Top Products</h3>
+            <canvas id="productChart"></canvas>
+        </div>
+    </div>
+
+    <!-- PROFIT CHART -->
+    <div class="card">
+        <h3>Profit Overview 💰</h3>
+        <canvas id="profitChart"></canvas>
+    </div>
+
+    <!-- DOWNLOAD BUTTON -->
+    <div class="card">
+        <button onclick="downloadCSV()">⬇ Download Data</button>
+    </div>
+
+    <!-- DATA TABLE -->
+    <div class="card">
+        <h3>Sales Data Table</h3>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Product</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- INSIGHTS -->
+    <div class="card">
+        <h3>Insights</h3>
+        <ul id="insights"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
